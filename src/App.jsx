@@ -5,6 +5,8 @@ import Contact from "./Contact"
 import Products from "./Products"
 import Phone from "./Phone"
 import Laptop from "./Laptop"
+import WithUseMemo from "./WithUseMemo"
+
 
 function App() {
 
@@ -22,8 +24,7 @@ function App() {
   return (
       
       <BrowserRouter>
-      <h1>React Router Example</h1>
-
+      <h5>React Routing</h5>
         <nav>
         <Link to="/home">Home</Link> |
         <Link to="/about">About</Link> |
@@ -32,6 +33,7 @@ function App() {
         <Link to="/products">Products</Link>
 
         </nav>
+        <WithUseMemo/>
 
         <Routes>
 
@@ -54,3 +56,4 @@ function App() {
 }
 
 export default App
+

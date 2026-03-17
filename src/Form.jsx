@@ -15,7 +15,7 @@ function Form() {
         username: "",
         email: ""
     })
-
+    
 function handleChange(e) {
     dispatch({
         name: e.target.name,

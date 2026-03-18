@@ -6,6 +6,7 @@ import Products from "./Products"
 import Phone from "./Phone"
 import Laptop from "./Laptop"
 import WithUseMemo from "./WithUseMemo"
+import Parent from "./Parent"
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
 
         </nav>
         <WithUseMemo/>
-
+        <Parent/>
         <Routes>
 
           <Route path="/home" element={<Home/>}/>

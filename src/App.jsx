@@ -7,6 +7,7 @@ import Phone from "./Phone"
 import Laptop from "./Laptop"
 import WithUseMemo from "./WithUseMemo"
 import Parent from "./Parent"
+import Counter2 from "./Counter2"
 
 
 function App() {
@@ -49,7 +50,7 @@ function App() {
 
           <Route path="*" element={<NotFound/>}/>
 
-       
+        <Counter2/>
         </Routes>
       
       </BrowserRouter>

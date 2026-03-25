@@ -37,6 +37,7 @@ function App() {
         </nav>
         <WithUseMemo/>
         <Parent/>
+        <Counter2/>
         <Routes>
 
           <Route path="/home" element={<Home/>}/>
@@ -50,7 +51,7 @@ function App() {
 
           <Route path="*" element={<NotFound/>}/>
 
-        <Counter2/>
+        
         </Routes>
       
       </BrowserRouter>

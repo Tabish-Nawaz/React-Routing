@@ -1,4 +1,5 @@
-import {useState,useMemo } from 'react'
+import {useState, useMemo, useCallback } from 'react'
+import Counter2 from './Counter2'
 
 function Parent() {
     const [count, setCount] = useState(0);
@@ -7,11 +8,15 @@ function Parent() {
 
     console.log("Parent Rendered");
     
+    const HandleClick = useCallback(() => {
+        console.log("Button Clicked")
+    },[])
 
   return (
     <>
         <h1>Parent Count: {count}</h1>
-        <button onClick={()=> setCount(count+1)}>Increse Counter</button>
+        <button onClick={()=> setCount(count + 1)}>Increse Counter</button>
+        <button onClick={HandleClick}>Buttton Counter 2</button>
         <Chlid user={user}/>
     </>
   )

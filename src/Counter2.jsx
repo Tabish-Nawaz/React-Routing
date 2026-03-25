@@ -1,11 +1,11 @@
-import {useState } from 'react'
+import {useState, useCallback } from 'react'
 
 function Counter2() {
     const [count, setCount] = useState(0)
 
-    function increment() {
+    const increment = useCallback(() => {
         setCount((prev) => prev + 1)
-    }
+    },[])
 
     return (
     <div>

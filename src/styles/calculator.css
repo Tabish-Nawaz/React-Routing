@@ -1,0 +1,66 @@
+/* Calculator container */
+.calculator-container {
+  width: 280px;
+  margin: 80px auto;
+  padding: 20px;
+  background: #2c2c2c;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(178, 166, 166, 0.5);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.calculator-container h1 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Input field */
+.calculator-container input {
+  width: 90%;
+  height: 50px;
+  font-size: 20px;
+  text-align: right;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgb(99, 118, 96);
+  color: white;
+}
+
+/* Calculator buttons */
+.calculator-container button {
+  width: 60px;
+  height: 50px;
+  margin: 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #444;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.calculator-container button:hover {
+  background: #5c85a6;
+  color: #1e1e1e;
+  border: 1px solid rgba(0, 0, 0, 0.366);
+  box-shadow: 3px 3px 5px 1px rgba(138, 141, 141, 0.5);
+}
+
+/* Equal button special style */
+.calculator-container button.equal-btn {
+  background: rgb(255, 166, 0);
+  color: black;
+}
+
+/* Clear button special style */
+.calculator-container button.clear-btn {
+  background: red;
+  color: white;
+}

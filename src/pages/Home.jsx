@@ -1,37 +1,47 @@
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate = useNavigate(); // navigation hook
-
-  const goToTodo = () => {
-    navigate("/todo"); // /todo route pe redirect
-  };
-  
-    const goToCalculator = () => {
-        navigate("/src/work/Calculator.jsx")
-    }
+  const navigate = useNavigate();
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Home Page</h1>
-      <p>Welcome to the Home Page!</p>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
 
-      {/* Todo Button */}
-      <button 
-        onClick={goToTodo} 
-        style={{ marginTop: "20px", padding: "10px 20px", fontSize: "16px", cursor: "pointer" }}
-      >
-        Todo App
-      </button> <br />
-      <button 
-        onClick={goToCalculator} 
-        style={{ marginTop: "20px", padding: "10px 20px", fontSize: "16px", cursor: "pointer" }}
-      >
-        Calculator
-      </button>
+      <div className="w-full max-w-md bg-white shadow-xl rounded-2xl p-6 text-center">
 
-      <br />
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
+          Home Page 🚀
+        </h1>
 
+        <p className="text-gray-500 mt-2 text-sm md:text-base">
+          Welcome to your React App!
+        </p>
+
+        <div className="mt-6 flex flex-col gap-3">
+
+          <button
+            onClick={() => navigate("/todo")}
+            className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-200"
+          >
+            Go to Todo App
+          </button>
+
+          <button
+            onClick={() => navigate("/calculator")}
+            className="bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition duration-200"
+          >
+            Go to Calculator
+          </button>
+
+          <button
+            onClick={() => navigate("/about")}
+            className="bg-gray-800 hover:bg-gray-900 text-white py-2 rounded-lg transition duration-200"
+          >
+            About Page
+          </button>
+
+        </div>
+
+      </div>
     </div>
   );
 }

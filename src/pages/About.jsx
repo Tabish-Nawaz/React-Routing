@@ -1,27 +1,39 @@
-import React from "react";
-import "../styles/about.module.css"; 
-
 function About() {
   return (
-    <div className="about-container">
-      <h1>About Us</h1>
-<p>
-  Welcome to our React App! 🌟✨  
-  This page gives you information about the app, its features, and how it works.
-</p>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
 
-<p>
-  Our app includes a <strong>Calculator</strong>, a <strong>Todo App</strong>, and other interactive components.
-</p>
+      {/* Card */}
+      <div className="w-full max-w-lg bg-white shadow-xl rounded-2xl p-6">
 
-<p>
-  I am a student currently learning <strong>React</strong>. My goal is to understand how to build interactive and dynamic web applications using components, hooks, and state management.  
-  I enjoy practicing by creating small projects and exploring new features in React step by step.
-</p>
+        <h1 className="text-3xl font-bold text-gray-800 text-center">
+          About Us 🌟
+        </h1>
 
-      <button className="about-btn" onClick={() => alert("Hello from About!")}>
-        Learn More
-      </button>
+        <p className="text-gray-600 mt-4 leading-relaxed">
+          Welcome to our React App! This project is built to learn
+          components, hooks, routing, and state management.
+        </p>
+
+        <p className="text-gray-600 mt-3 leading-relaxed">
+          It includes a <span className="font-semibold">Todo App</span>,
+          <span className="font-semibold"> Calculator</span>, and more interactive features.
+        </p>
+
+        <p className="text-gray-600 mt-3 leading-relaxed">
+          I am currently learning React and building small projects to improve my skills step by step.
+        </p>
+
+        {/* Button */}
+        <div className="mt-6 text-center">
+          <button
+            onClick={() => alert("Hello from About!")}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition"
+          >
+            Learn More
+          </button>
+        </div>
+
+      </div>
     </div>
   );
 }
